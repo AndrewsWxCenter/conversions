@@ -13,6 +13,7 @@ function speedConverter(source,valNum) {
   var inputMi = document.getElementById("inputMps");
   var inputNm = document.getElementById("inputMps");
   var inputKm = document.getElementById("inputKph");
+  var inputTripsFromRahToDur = document.getElementById("inputMps");
   
   ------ CODE -------
 
