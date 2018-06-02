@@ -1,0 +1,58 @@
+<script>
+
+function speedConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputMph = document.getElementById("inputMph");
+  var inputKts = document.getElementById("inputKts");
+  var inputMps = document.getElementById("inputMps");
+  var inputKph = document.getElementById("inputKph");
+
+  if (source=="inputMph") {
+    inputKts.value=(valNum*0.86897).toFixed(4);
+    inputMps.value=(valNum*0.4470).toFixed(4);
+    inputKph.value=(valNum*1.60934).toFixed(4);
+  }
+  if (source=="inputKts") {
+    inputMph.value=(valNum*1.1508).toFixed(4);
+    inputMps.value=(valNum*0.5144).toFixed(4);
+    inputKph.value=(valNum*1.852).toFixed(4);
+  }
+  if (source=="inputMps") {
+    inputMph.value=(valNum*2.23694).toFixed(4);
+    inputKts.value=(valNum*1.944).toFixed(4);
+    inputKph.value=(valNum*3.6).toFixed(4);
+  }
+  if (source=="inputKph") {
+    inputMph.value=(valNum*0.621388).toFixed(4);
+    inputKts.value=(valNum*0.53996).toFixed(4);
+    inputMps.value=(valNum*0.277777).toFixed(4);
+  }
+}
+</script>
+
+
+
+
+
+
+
+<label>MPH</label>
+    <input id="inputMph" class="w3-input w3-border" type="number" placeholder="Miles per hour" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>Knots</label>
+    <input id="inputKts" class="w3-input w3-border" type="number" placeholder="Knots" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>M/S</label>
+    <input id="inputMps" class="w3-input w3-border" type="number" placeholder="Meters per second" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>KPH</label>
+    <input id="inputKph" class="w3-input w3-border" type="number" placeholder="Kilometers per hour" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+   
+</div>
+<hr>
