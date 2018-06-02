@@ -1,39 +1,107 @@
 <script>
 
-function speedConverter(source,valNum) {
+function areaConverter(source,valNum) {
 
   valNum = parseFloat(valNum);
-  var inputAcs = document.getElementById("inputMph");
-  var inputHcs = document.getElementById("inputMps");
-  var inputSqm = document.getElementById("inputKts");
-  var inputSqk = document.getElementById("inputMps");
-  var inputSqf = document.getElementById("inputMps");
-  var inputFtb = document.getElementById("inputMps");
-  var inputNCs = document.getElementById("inputMps");
-  var inputWak = document.getElementById("inputMps");
+  var inputAcs = document.getElementById("inputAcs");
+  var inputHcs = document.getElementById("inputHcs");
+  var inputSqf = document.getElementById("inputSqf");
+  var inputSqi = document.getElementById("inputSqm");
+  var inputSqk = document.getElementById("inputSqk");
+  var inputSqm = document.getElementById("inputSqf");
+  var inputFtb = document.getElementById("inputFtb");
+  var inputNCs = document.getElementById("inputNCs");
+  var inputWak = document.getElementById("inputWak");
 
-  
-  ------ CODE -------
-
-  if (source=="inputMph") {
-    inputKts.value=(valNum*0.86897).toFixed(4);
-    inputMps.value=(valNum*0.4470).toFixed(4);
-    inputKph.value=(valNum*1.60934).toFixed(4);
+  if (source=="inputAcs") {
+    inputHcs.value=(valNum*0.404686).toFixed(4);
+    inputSqf.value=(valNum*43560).toFixed(4);
+    inputSqi.value=(valNum*0.0015625).toFixed(4);
+    inputSqk.value=(valNum*0.00404686).toFixed(4);
+    inputSqm.value=(valNum*4046.86).toFixed(4);
+    inputFtb.value=(valNum*0.75625).toFixed(4);
+    inputNCs.value=(valNum*0.0000000290324978).toFixed(4);
+    inputWak.value=(valNum*0.00000182322).toFixed(4);
   }
-  if (source=="inputKts") {
-    inputMph.value=(valNum*1.1508).toFixed(4);
-    inputMps.value=(valNum*0.5144).toFixed(4);
-    inputKph.value=(valNum*1.852).toFixed(4);
+  if (source=="inputHcs") {
+    inputAcs.value=(valNum*2.47105).toFixed(4);
+    inputSqf.value=(valNum*107639).toFixed(4);
+    inputSqi.value=(valNum*0.00386102).toFixed(4);
+    inputSqk.value=(valNum*0.01).toFixed(4);
+    inputSqm.value=(valNum*10000).toFixed(4);
+    inputFtb.value=(valNum*1.86873448366).toFixed(4);
+    inputNCs.value=(valNum*0.0000000717408491).toFixed(4);
+    inputWak.value=(valNum*0.00000450527).toFixed(4);
   }
-  if (source=="inputMps") {
-    inputMph.value=(valNum*2.23694).toFixed(4);
-    inputKts.value=(valNum*1.944).toFixed(4);
-    inputKph.value=(valNum*3.6).toFixed(4);
+  if (source=="inputSqf") {
+    inputAcs.value=(valNum*2.47105).toFixed(4);
+    inputHcs.value=(valNum*0.000022957).toFixed(4);
+    inputSqi.value=(valNum*0.00000003578).toFixed(4);
+    inputSqk.value=(valNum*0.000000092903).toFixed(4);
+    inputSqm.value=(valNum*0.092903).toFixed(4);
+    inputFtb.value=(valNum*0.0000173611039736).toFixed(4);
+    inputNCs.value=(valNum*0.00000000000066649338).toFixed(4);
+    inputWak.value=(valNum*0.000000000041858518).toFixed(4);
   }
-  if (source=="inputKph") {
-    inputMph.value=(valNum*0.621388).toFixed(4);
-    inputKts.value=(valNum*0.53996).toFixed(4);
-    inputMps.value=(valNum*0.277777).toFixed(4);
+  if (source=="inputSqi") {
+    inputAcs.value=(valNum*640).toFixed(4);
+    inputHcs.value=(valNum*258.999).toFixed(4);
+    inputSqf.value=(valNum*27780000).toFixed(4);
+    inputSqk.value=(valNum*2.58999).toFixed(4);
+    inputSqm.value=(valNum*2590000).toFixed(4);
+    inputFtb.value=(valNum*484.000009344).toFixed(4);
+    inputNCs.value=(valNum*0.00001858079).toFixed(4);
+    inputWak.value=(valNum*0.00116686114).toFixed(4);
+  }
+    if (source=="inputSqk") {
+    inputAcs.value=(valNum*247.105).toFixed(4);
+    inputHcs.value=(valNum*100).toFixed(4);
+    inputSqf.value=(valNum*10760000).toFixed(4);
+    inputSqi.value=(valNum*0.386102).toFixed(4);
+    inputSqm.value=(valNum*1000000).toFixed(4);
+    inputFtb.value=(valNum*186.873448366).toFixed(4);
+    inputNCs.value=(valNum*0.00000718447).toFixed(4);
+    inputWak.value=(valNum*0.00045045045).toFixed(4);
+  }
+      if (source=="inputSqm") {
+    inputAcs.value=(valNum*0.000247105).toFixed(4);
+    inputHcs.value=(valNum*0.0001).toFixed(4);
+    inputSqf.value=(valNum*10.7639).toFixed(4);
+    inputSqi.value=(valNum*0.0000003861).toFixed(4);
+    inputSqk.value=(valNum*0.000001).toFixed(4);
+    inputFtb.value=(valNum*0.000186873448366).toFixed(4);
+    inputNCs.value=(valNum*0.0000000000071741673).toFixed(4);
+    inputWak.value=(valNum*0.00000000045045045).toFixed(4);
+  }
+        if (source=="inputFtb") {
+    inputAcs.value=(valNum*1.3223128549).toFixed(4);
+    inputHcs.value=(valNum*0.5351215).toFixed(4);
+    inputSqf.value=(valNum*57600.0236806).toFixed(4);
+    inputSqi.value=(valNum*0.00206611566259).toFixed(4);
+    inputSqk.value=(valNum*0.005351215).toFixed(4);
+    inputSqm.value=(valNum*5351.215).toFixed(4);
+    inputNCs.value=(valNum*0.000000038390079).toFixed(4);
+    inputWak.value=(valNum*0.00000241087).toFixed(4);
+  }
+          if (source=="inputNCs") {
+    inputAcs.value=(valNum*34444160.0199).toFixed(4);
+    inputHcs.value=(valNum*13939059.9992).toFixed(4);
+    inputSqf.value=(valNum*1500390000000).toFixed(4);
+    inputSqi.value=(valNum*53819).toFixed(4);
+    inputSqk.value=(valNum*139389).toFixed(4);
+    inputSqm.value=(valNum*139388999194).toFixed(4);
+    inputFtb.value=(valNum*26048396.5141).toFixed(4);
+    inputWak.value=(valNum*62.7992998833).toFixed(4);
+  }
+    if (source=="inputWak") {
+    inputAcs.value=(valNum*548480.161473).toFixed(4);
+    inputHcs.value=(valNum*221962.27973).toFixed(4);
+    inputSqf.value=(valNum*23891799083.7).toFixed(4);
+    inputSqi.value=(valNum*857).toFixed(4);
+    inputSqk.value=(valNum*2220).toFixed(4);
+    inputSqm.value=(valNum*2220000002.22).toFixed(4);
+    inputFtb.value=(valNum*414788.022581).toFixed(4);
+    inputNCs.value=(valNum*0.0159237444).toFixed(4);
   }
 }
 </script>
@@ -41,25 +109,53 @@ function speedConverter(source,valNum) {
 
 
 
+<br>
+<hr>
+<br>
 
 
+<label>Acres</label>
+    <input id="inputAcs" class="w3-input w3-border" type="number" placeholder="Acs" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+  
+    <label>Hectacres</label>
+    <input id="inputHcs" class="w3-input w3-border" type="number" placeholder="Hct" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Square feet</label>
+    <input id="inputSqf" class="w3-input w3-border" type="number" placeholder="Sqft" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+  </div>
+  
+  <div class="w3-half w3-margin-top">
+    <label>Square miles</label>
+    <input id="inputSqi" class="w3-input w3-border" type="number" placeholder="Sqmi" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>Square kilometers</label>
+    <input id="inputSqk" class="w3-input w3-border" type="number" placeholder="Sqkm" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+  </div>
 
-<label>MPH</label>
-    <input id="inputMph" class="w3-input w3-border" type="number" placeholder="Miles per hour" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
-  </div>
+
   <div class="w3-half w3-margin-top">
-    <label>Knots</label>
-    <input id="inputKts" class="w3-input w3-border" type="number" placeholder="Knots" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+    <label>Square meters</label>
+    <input id="inputSqm" class="w3-input w3-border" type="number" placeholder="Sqm" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
   </div>
-  <div class="w3-half w3-margin-top">
-    <label>M/S</label>
-    <input id="inputMps" class="w3-input w3-border" type="number" placeholder="Meters per second" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+  
+    <div class="w3-half w3-margin-top">
+    <label>American Football Fields</label>
+    <input id="inputFtb" class="w3-input w3-border" type="number" placeholder="FBF" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
   </div>
-  <div class="w3-half w3-margin-top">
-    <label>KPH</label>
-    <input id="inputKph" class="w3-input w3-border" type="number" placeholder="Kilometers per hour" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+  
+    <div class="w3-half w3-margin-top">
+    <label>North Carolinas</label>
+    <input id="inputNCs" class="w3-input w3-border" type="number" placeholder="NCs" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
   </div>
-  <div class="w3-half w3-margin-top">
-   
-</div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Wake Counties (NC)</label>
+    <input id="inputWak" class="w3-input w3-border" type="number" placeholder="Wake" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+  </div>
+  
 <hr>
