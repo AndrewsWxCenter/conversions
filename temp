@@ -1,0 +1,58 @@
+<script>
+
+function tempConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputFah = document.getElementById("inputFah");
+  var inputCel = document.getElementById("inputCel");
+  var inputKel = document.getElementById("inputKel");
+  var inputRan = document.getElementById("inputRan");
+
+  if (source=="inputFah") {
+    inputCel.value=(valNum*0.55555-17.77777).toFixed(2);
+    inputKel.value=(valNum*0.55555+255.37222).toFixed(2);
+    inputRan.value=(valNum*1+459.67).toFixed();
+  }
+  if (source=="inputCel") {
+    inputFah.value=(valNum*1.8+32).toFixed(2);
+    inputKel.value=(valNum*1+273.15).toFixed(2);
+    inputRan.value=(valNum*1+273.15*1.8).toFixed();
+  }
+  if (source=="inputKel") {
+    inputFah.value=(valNum*1.8-459.67).toFixed(3);
+    inputCel.value=(valNum*1-273.15).toFixed(3);
+    inputRan.value=(valNum*1.8).toFixed(2);
+  }
+  if (source=="inputRan") {
+    inputFah.value=(valNum*1-459.67).toFixed(3);
+    inputCel.value=(valNum*1-491.67*0.55555).toFixed(3);
+    inputKel.value=(valNum*0.55555).toFixed(2);
+  }
+}
+</script>
+
+
+
+
+
+
+
+<label>Fahrenheit</label>
+    <input id="inputFah" class="w3-input w3-border" type="number" placeholder="Fahrenheit" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>Celsius</label>
+    <input id="inputCel" class="w3-input w3-border" type="number" placeholder="Celsius" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>Kelvin</label>
+    <input id="inputKel" class="w3-input w3-border" type="number" placeholder="Kelvin" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>Rankine</label>
+    <input id="inputRan" class="w3-input w3-border" type="number" placeholder="Rankine" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+   
+</div>
+<hr>
