@@ -1,21 +1,21 @@
 <script>
 
-function lengthConverter(source,valNum) {
+function timeConverter(source,valNum) {
 
   valNum = parseFloat(valNum);
-  var inputIn = document.getElementById("inputIn");
-  var inputFt = document.getElementById("inputFt");
-  var inputYd = document.getElementById("inputYd");
-  var inputFm = document.getElementById("inputFm");
-  var inputMe = document.getElementById("inputMe");
-  var inputCm = document.getElementById("inputCm");
-  var inputMm = document.getElementById("inputMm");
-  var inputMi = document.getElementById("inputMi");
-  var inputNm = document.getElementById("inputNm");
-  var inputKm = document.getElementById("inputKm");
-  var inputRD = document.getElementById("inputRD");
-  var inputER = document.getElementById("inputER");
-  var inputAU = document.getElementById("inputAU");
+  var inputSec = document.getElementById("inputSec");
+  var inputMin = document.getElementById("inputMin");
+  var inputHrs = document.getElementById("inputHrs");
+  var inputDay = document.getElementById("inputDay");
+  var inputWks = document.getElementById("inputWks");
+  var inputMon = document.getElementById("inputMon");
+  var inputYrs = document.getElementById("inputYrs");
+  var inputDcs = document.getElementById("inputDcs");
+  var inputCen = document.getElementById("inputCen");
+  var inputMil = document.getElementById("inputMil");
+  var inputGal = document.getElementById("inputGal");
+  var inputMar = document.getElementById("inputMar");
+  var inputJup = document.getElementById("inputJup");
 
   if (source=="inputIn") {
     inputFt.value=(valNum*0.0833333333333).toFixed(4);
