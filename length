@@ -19,10 +19,19 @@ function lengthConverter(source,valNum) {
   
   ------ CODE -------
 
-  if (source=="inputMph") {
-    inputKts.value=(valNum*0.86897).toFixed(4);
-    inputMps.value=(valNum*0.4470).toFixed(4);
-    inputKph.value=(valNum*1.60934).toFixed(4);
+  if (source=="inputIn") {
+    inputFt.value=(valNum*0.0833333333333).toFixed(4);
+    inputYd.value=(valNum*0.0277777777778).toFixed(4);
+    inputFm.value=(valNum*0.0138888888889).toFixed(4);
+    inputMe.value=(valNum*0.0254).toFixed(4);
+    inputCm.value=(valNum*2.54).toFixed(4);
+    inputMm.value=(valNum*25.4).toFixed(4);
+    inputMi.value=(valNum*0.0000157828282828).toFixed(4);
+    inputNm.value=(valNum*0.0000137149028078).toFixed(4);
+    inputKm.value=(valNum*0.0000254).toFixed(4);
+    inputRD.value=(valNum*0.000000644197073).toFixed(4);
+    inputER.value=(valNum*0.00000000398681526).toFixed(4);
+    inputAU.value=(valNum*0.000000000000169788512906).toFixed(4);
   }
   if (source=="inputKts") {
     inputMph.value=(valNum*1.1508).toFixed(4);
