@@ -16,8 +16,6 @@ function lengthConverter(source,valNum) {
   var inputRD = document.getElementById("inputRD");
   var inputER = document.getElementById("inputER");
   var inputAU = document.getElementById("inputAU");
-  
-  ------ CODE -------
 
   if (source=="inputIn") {
     inputFt.value=(valNum*0.0833333333333).toFixed(4);
@@ -201,13 +199,6 @@ function lengthConverter(source,valNum) {
     inputRD.value=(valNum*3794114.58257).toFixed(4);
     inputER.value=(valNum*23481.0658766).toFixed(4);
   }
-  
-  
-  
-  
-  
-  
-  
 }
 </script>
 
