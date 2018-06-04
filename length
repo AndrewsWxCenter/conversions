@@ -217,22 +217,67 @@ function lengthConverter(source,valNum) {
 
 
 
-<label>MPH</label>
-    <input id="inputMph" class="w3-input w3-border" type="number" placeholder="Miles per hour" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+<label>Inches</label>
+    <input id="inputIn" class="w3-input w3-border" type="number" placeholder="In" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
   </div>
+  
   <div class="w3-half w3-margin-top">
-    <label>Knots</label>
-    <input id="inputKts" class="w3-input w3-border" type="number" placeholder="Knots" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+    <label>Feet</label>
+    <input id="inputFt" class="w3-input w3-border" type="number" placeholder="Ft" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
   </div>
+  
   <div class="w3-half w3-margin-top">
-    <label>M/S</label>
-    <input id="inputMps" class="w3-input w3-border" type="number" placeholder="Meters per second" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+    <label>Yards</label>
+    <input id="inputYd" class="w3-input w3-border" type="number" placeholder="Yd" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
   </div>
+
   <div class="w3-half w3-margin-top">
-    <label>KPH</label>
-    <input id="inputKph" class="w3-input w3-border" type="number" placeholder="Kilometers per hour" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+    <label>Fathoms</label>
+    <input id="inputFm" class="w3-input w3-border" type="number" placeholder="Fath" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
   </div>
-  <div class="w3-half w3-margin-top">
-   
-</div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Meters</label>
+    <input id="inputMe" class="w3-input w3-border" type="number" placeholder="M" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Centimeters</label>
+    <input id="inputCm" class="w3-input w3-border" type="number" placeholder="Cm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Millimeters</label>
+    <input id="inputMm" class="w3-input w3-border" type="number" placeholder="Mm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Miles</label>
+    <input id="inputMi" class="w3-input w3-border" type="number" placeholder="Mi" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Nautical Miles</label>
+    <input id="inputNm" class="w3-input w3-border" type="number" placeholder="Nm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Kilometers</label>
+    <input id="inputKm" class="w3-input w3-border" type="number" placeholder="Km" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Trips from Raleigh to Durham</label>
+    <input id="inputRD" class="w3-input w3-border" type="number" placeholder="Rah-Duh" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Earth Radii</label>
+    <input id="inputER" class="w3-input w3-border" type="number" placeholder="ER" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Astronomical Units</label>
+    <input id="inputAU" class="w3-input w3-border" type="number" placeholder="AU" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
 <hr>
