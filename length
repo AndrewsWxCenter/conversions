@@ -1,19 +1,21 @@
 <script>
 
-function speedConverter(source,valNum) {
+function lengthConverter(source,valNum) {
 
   valNum = parseFloat(valNum);
-  var inputIn = document.getElementById("inputMph");
-  var inputFt = document.getElementById("inputKts");
-  var inputYd = document.getElementById("inputMps");
-  var inputFm = document.getElementById("inputMps");
-  var inputMe = document.getElementById("inputMps");
-  var inputCm = document.getElementById("inputMps");
-  var inputMm = document.getElementById("inputKph");
-  var inputMi = document.getElementById("inputMps");
-  var inputNm = document.getElementById("inputMps");
-  var inputKm = document.getElementById("inputKph");
-  var inputTripsFromRahToDur = document.getElementById("inputMps");
+  var inputIn = document.getElementById("inputIn");
+  var inputFt = document.getElementById("inputFt");
+  var inputYd = document.getElementById("inputYd");
+  var inputFm = document.getElementById("inputFm");
+  var inputMe = document.getElementById("inputMe");
+  var inputCm = document.getElementById("inputCm");
+  var inputMm = document.getElementById("inputMm");
+  var inputMi = document.getElementById("inputMi");
+  var inputNm = document.getElementById("inputNm");
+  var inputKm = document.getElementById("inputKm");
+  var inputRD = document.getElementById("inputRD");
+  var inputER = document.getElementById("inputER");
+  var inputAU = document.getElementById("inputAU");
   
   ------ CODE -------
 
