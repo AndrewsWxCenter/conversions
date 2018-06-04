@@ -1,0 +1,274 @@
+<script>
+
+function lengthConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputIn = document.getElementById("inputIn");
+  var inputFt = document.getElementById("inputFt");
+  var inputYd = document.getElementById("inputYd");
+  var inputFm = document.getElementById("inputFm");
+  var inputMe = document.getElementById("inputMe");
+  var inputCm = document.getElementById("inputCm");
+  var inputMm = document.getElementById("inputMm");
+  var inputMi = document.getElementById("inputMi");
+  var inputNm = document.getElementById("inputNm");
+  var inputKm = document.getElementById("inputKm");
+  var inputRD = document.getElementById("inputRD");
+  var inputER = document.getElementById("inputER");
+  var inputAU = document.getElementById("inputAU");
+
+  if (source=="inputIn") {
+    inputFt.value=(valNum*0.0833333333333).toFixed(4);
+    inputYd.value=(valNum*0.0277777777778).toFixed(4);
+    inputFm.value=(valNum*0.0138888888889).toFixed(4);
+    inputMe.value=(valNum*0.0254).toFixed(4);
+    inputCm.value=(valNum*2.54).toFixed(4);
+    inputMm.value=(valNum*25.4).toFixed(4);
+    inputMi.value=(valNum*0.0000157828282828).toFixed(4);
+    inputNm.value=(valNum*0.0000137149028078).toFixed(4);
+    inputKm.value=(valNum*0.0000254).toFixed(4);
+    inputRD.value=(valNum*0.000000644197073).toFixed(4);
+    inputER.value=(valNum*0.00000000398681526).toFixed(4);
+    inputAU.value=(valNum*0.000000000000169788512906).toFixed(4);
+  }
+  if (source=="inputFt") {
+    inputIn.value=(valNum*12).toFixed(4);
+    inputYd.value=(valNum*0.333333333333).toFixed(4);
+    inputFm.value=(valNum*0.166666666667).toFixed(4);
+    inputMe.value=(valNum*0.3048).toFixed(4);
+    inputCm.value=(valNum*30.48).toFixed(4);
+    inputMm.value=(valNum*304.8).toFixed(4);
+    inputMi.value=(valNum*0.000189393939394).toFixed(4);
+    inputNm.value=(valNum*0.000164578833693).toFixed(4);
+    inputKm.value=(valNum*0.0003048).toFixed(4);
+    inputRD.value=(valNum*0.00000773036).toFixed(4);
+    inputER.value=(valNum*0.0000000478417831).toFixed(4);
+    inputAU.value=(valNum*0.00000000000203746215487).toFixed(4);
+  }
+  if (source=="inputYd") {
+    inputIn.value=(valNum*36).toFixed(4);
+    inputFt.value=(valNum*3).toFixed(4);
+    inputFm.value=(valNum*0.5).toFixed(4);
+    inputMe.value=(valNum*0.9144).toFixed(4);
+    inputCm.value=(valNum*91.44).toFixed(4);
+    inputMm.value=(valNum*914.4).toFixed(4);
+    inputMi.value=(valNum*0.000568181818182).toFixed(4);
+    inputNm.value=(valNum*0.00049373650108).toFixed(4);
+    inputKm.value=(valNum*0.0009144).toFixed(4);
+    inputRD.value=(valNum*0.00002319109).toFixed(4);
+    inputER.value=(valNum*0.000000143525349).toFixed(4);
+    inputAU.value=(valNum*0.0000000000061123864646).toFixed(4);
+  }
+    if (source=="inputFm") {
+    inputIn.value=(valNum*72).toFixed(4);
+    inputFt.value=(valNum*6).toFixed(4);
+    inputYd.value=(valNum*2).toFixed(4);
+    inputMe.value=(valNum*1.8288).toFixed(4);
+    inputCm.value=(valNum*182.88).toFixed(4);
+    inputMm.value=(valNum*1828.8).toFixed(4);
+    inputMi.value=(valNum*0.00113636363636).toFixed(4);
+    inputNm.value=(valNum*0.00098747300216).toFixed(4);
+    inputKm.value=(valNum*0.0018288).toFixed(4);
+    inputRD.value=(valNum*0.00004638218).toFixed(4);
+    inputER.value=(valNum*0.000000287050698).toFixed(4);
+    inputAU.value=(valNum*0.0000000000122247729292).toFixed(4);
+  }
+      if (source=="inputMe") {
+    inputIn.value=(valNum*39.3700787402).toFixed(4);
+    inputFt.value=(valNum*3.28083989501).toFixed(4);
+    inputYd.value=(valNum*1.09361329834).toFixed(4);
+    inputFm.value=(valNum*0.546806649169).toFixed(4);
+    inputCm.value=(valNum*100).toFixed(4);
+    inputMm.value=(valNum*1000).toFixed(4);
+    inputMi.value=(valNum*0.000621371192237).toFixed(4);
+    inputNm.value=(valNum*0.000539956803456).toFixed(4);
+    inputKm.value=(valNum*0.001).toFixed(4);
+    inputRD.value=(valNum*0.00002536208).toFixed(4);
+    inputER.value=(valNum*0.000000156961231).toFixed(4);
+    inputAU.value=(valNum*0.00000000000668458712227).toFixed(4);
+  }
+        if (source=="inputCm") {
+    inputIn.value=(valNum*0.393700787402).toFixed(4);
+    inputFt.value=(valNum*0.0328083989501).toFixed(4);
+    inputYd.value=(valNum*0.0109361329834).toFixed(4);
+    inputFm.value=(valNum*0.00546806649169).toFixed(4);
+    inputMe.value=(valNum*0.01).toFixed(4);
+    inputMm.value=(valNum*10).toFixed(4);
+    inputMi.value=(valNum*0.00000621371192237).toFixed(4);
+    inputNm.value=(valNum*0.00000539956803456).toFixed(4);
+    inputKm.value=(valNum*0.00001).toFixed(4);
+    inputRD.value=(valNum*0.000000253620895).toFixed(4);
+    inputER.value=(valNum*0.00000000156961231).toFixed(4);
+    inputAU.value=(valNum*0.0000000000000668458712227).toFixed(4);
+  }
+          if (source=="inputMm") {
+    inputIn.value=(valNum*0.0393700787402).toFixed(4);
+    inputFt.value=(valNum*0.00328083989501).toFixed(4);
+    inputYd.value=(valNum*0.00109361329834).toFixed(4);
+    inputFm.value=(valNum*0.000546806649169).toFixed(4);
+    inputMe.value=(valNum*0.0001).toFixed(4);
+    inputCm.value=(valNum*0.1).toFixed(4);
+    inputMi.value=(valNum*0.000000621371192237).toFixed(4);
+    inputNm.value=(valNum*0.000000539956803456).toFixed(4);
+    inputKm.value=(valNum*0.000001).toFixed(4);
+    inputRD.value=(valNum*0.0000000253620895).toFixed(4);
+    inputER.value=(valNum*0.00000000015696123).toFixed(4);
+    inputAU.value=(valNum*0.00000000000000668458712227).toFixed(4);
+  }
+            if (source=="inputMi") {
+    inputIn.value=(valNum*63360).toFixed(4);
+    inputFt.value=(valNum*5280).toFixed(4);
+    inputYd.value=(valNum*1760).toFixed(4);
+    inputFm.value=(valNum*880).toFixed(4);
+    inputMe.value=(valNum*1609.344).toFixed(4);
+    inputCm.value=(valNum*160934.4).toFixed(4);
+    inputMm.value=(valNum*1609344).toFixed(4);
+    inputNm.value=(valNum*0.868976241901).toFixed(4);
+    inputKm.value=(valNum*1.609344).toFixed(4);
+    inputRD.value=(valNum*0.04081632653).toFixed(4);
+    inputER.value=(valNum*0.00025260461).toFixed(4);
+    inputAU.value=(valNum*0.0000000107578001777).toFixed(4);
+  }
+              if (source=="inputNm") {
+    inputIn.value=(valNum*72913.3858268).toFixed(4);
+    inputFt.value=(valNum*6076.11548556).toFixed(4);
+    inputYd.value=(valNum*2025.37182852).toFixed(4);
+    inputFm.value=(valNum*1012.68591426).toFixed(4);
+    inputMe.value=(valNum*1852).toFixed(4);
+    inputCm.value=(valNum*185200).toFixed(4);
+    inputMm.value=(valNum*1852000).toFixed(4);
+    inputMi.value=(valNum*1.15077944802).toFixed(4);
+    inputKm.value=(valNum*1.852).toFixed(4);
+    inputRD.value=(valNum*0.04697058971).toFixed(4);
+    inputER.value=(valNum*0.00029069219).toFixed(4);
+    inputAU.value=(valNum*0.0000000123798553504).toFixed(4);
+  }
+                if (source=="inputKm") {
+    inputIn.value=(valNum*39370.0787402).toFixed(4);
+    inputFt.value=(valNum*3280.83989501).toFixed(4);
+    inputYd.value=(valNum*1093.61329834).toFixed(4);
+    inputFm.value=(valNum*546.806649169).toFixed(4);
+    inputMe.value=(valNum*1000).toFixed(4);
+    inputCm.value=(valNum*100000).toFixed(4);
+    inputMm.value=(valNum*1000000).toFixed(4);
+    inputMi.value=(valNum*0.621371192237).toFixed(4);
+    inputNm.value=(valNum*0.539956803456).toFixed(4);
+    inputRD.value=(valNum*0.02536208947).toFixed(4);
+    inputER.value=(valNum*0.00015696123).toFixed(4);
+    inputAU.value=(valNum*0.00000000668458712227).toFixed(4);
+  }
+                  if (source=="inputRD") {
+    inputIn.value=(valNum*1552320).toFixed(4);
+    inputFt.value=(valNum*129360).toFixed(4);
+    inputYd.value=(valNum*43120).toFixed(4);
+    inputFm.value=(valNum*21560).toFixed(4);
+    inputMe.value=(valNum*39428.928).toFixed(4);
+    inputCm.value=(valNum*3942892.8).toFixed(4);
+    inputMm.value=(valNum*39428928).toFixed(4);
+    inputMi.value=(valNum*24.5).toFixed(4);
+    inputNm.value=(valNum*21.2899179266).toFixed(4);
+    inputKm.value=(valNum*39.428928).toFixed(4);
+    inputER.value=(valNum*0.00618881305).toFixed(4);
+    inputAU.value=(valNum*0.000000263566104354).toFixed(4);
+  }
+                    if (source=="inputER") {
+    inputIn.value=(valNum*250826771.654).toFixed(4);
+    inputFt.value=(valNum*20902230.9711).toFixed(4);
+    inputYd.value=(valNum*6967410.32371).toFixed(4);
+    inputFm.value=(valNum*3483705.16185).toFixed(4);
+    inputMe.value=(valNum*6371000).toFixed(4);
+    inputCm.value=(valNum*637100000).toFixed(4);
+    inputMm.value=(valNum*6371000000).toFixed(4);
+    inputMi.value=(valNum*3958.75586574).toFixed(4);
+    inputNm.value=(valNum*3440.06479482).toFixed(4);
+    inputKm.value=(valNum*6371).toFixed(4);
+    inputRD.value=(valNum*161.581872071).toFixed(4);
+    inputAU.value=(valNum*0.000042587504556).toFixed(4);
+  }
+                      if (source=="inputAU") {
+    inputIn.value=(valNum*5889679948820).toFixed(4);
+    inputFt.value=(valNum*490806662402).toFixed(4);
+    inputYd.value=(valNum*163602220801).toFixed(4);
+    inputFm.value=(valNum*81801110400.3).toFixed(4);
+    inputMe.value=(valNum*149597870700).toFixed(4);
+    inputCm.value=(valNum*14959787070000).toFixed(4);
+    inputMm.value=(valNum*149597870700000).toFixed(4);
+    inputMi.value=(valNum*92955807.273).toFixed(4);
+    inputNm.value=(valNum*80776388.067).toFixed(4);
+    inputKm.value=(valNum*149597870.7).toFixed(4);
+    inputRD.value=(valNum*3794114.58257).toFixed(4);
+    inputER.value=(valNum*23481.0658766).toFixed(4);
+  }
+}
+</script>
+
+
+
+
+
+
+
+<label>Inches</label>
+    <input id="inputIn" class="w3-input w3-border" type="number" placeholder="In" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+  <div class="w3-half w3-margin-top">
+    <label>Feet</label>
+    <input id="inputFt" class="w3-input w3-border" type="number" placeholder="Ft" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+  <div class="w3-half w3-margin-top">
+    <label>Yards</label>
+    <input id="inputYd" class="w3-input w3-border" type="number" placeholder="Yd" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+
+  <div class="w3-half w3-margin-top">
+    <label>Fathoms</label>
+    <input id="inputFm" class="w3-input w3-border" type="number" placeholder="Fath" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Meters</label>
+    <input id="inputMe" class="w3-input w3-border" type="number" placeholder="M" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Centimeters</label>
+    <input id="inputCm" class="w3-input w3-border" type="number" placeholder="Cm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Millimeters</label>
+    <input id="inputMm" class="w3-input w3-border" type="number" placeholder="Mm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Miles</label>
+    <input id="inputMi" class="w3-input w3-border" type="number" placeholder="Mi" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Nautical Miles</label>
+    <input id="inputNm" class="w3-input w3-border" type="number" placeholder="Nm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Kilometers</label>
+    <input id="inputKm" class="w3-input w3-border" type="number" placeholder="Km" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Trips from Raleigh to Durham</label>
+    <input id="inputRD" class="w3-input w3-border" type="number" placeholder="Rah-Duh" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Earth Radii</label>
+    <input id="inputER" class="w3-input w3-border" type="number" placeholder="ER" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Astronomical Units</label>
+    <input id="inputAU" class="w3-input w3-border" type="number" placeholder="AU" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+<hr>
