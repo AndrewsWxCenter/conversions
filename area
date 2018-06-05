@@ -12,6 +12,10 @@ function areaConverter(source,valNum) {
   var inputFtb = document.getElementById("inputFtb");
   var inputNCs = document.getElementById("inputNCs");
   var inputWak = document.getElementById("inputWak");
+  var inputRAH = document.getElementById("inputRAH");
+  var inputUSA = document.getElementById("inputUSA");
+  var inputSAE = document.getElementById("inputSAE");
+  var inputAtl = document.getElementById("inputAtl");
 
   if (source=="inputAcs") {
     inputHcs.value=(valNum*0.404686).toFixed(4);
@@ -22,6 +26,10 @@ function areaConverter(source,valNum) {
     inputFtb.value=(valNum*0.75625).toFixed(4);
     inputNCs.value=(valNum*0.0000000290324978).toFixed(4);
     inputWak.value=(valNum*0.00000182322).toFixed(4);
+    inputRAH.value=(valNum*0.0000000941775662).toFixed(4);
+    inputUSA.value=(valNum*0.00000000041153705).toFixed(4);
+    inputAtl.value=(valNum*0.000000000038012407).toFixed(4);
+    inputSAE.value=(valNum*0.0000000000079340166).toFixed(4);
   }
   if (source=="inputHcs") {
     inputAcs.value=(valNum*2.47105).toFixed(4);
@@ -32,6 +40,10 @@ function areaConverter(source,valNum) {
     inputFtb.value=(valNum*1.86873448366).toFixed(4);
     inputNCs.value=(valNum*0.0000000717408491).toFixed(4);
     inputWak.value=(valNum*0.00000450527).toFixed(4);
+    inputRAH.value=(valNum*0.000000232717739).toFixed(4);
+    inputUSA.value=(valNum*0.00000000101692978).toFixed(4);
+    inputAtl.value=(valNum*0.00000000093930665).toFixed(4);
+    inputSAE.value=(valNum*0.00000000019605365).toFixed(4);
   }
   if (source=="inputSqf") {
     inputAcs.value=(valNum*2.47105).toFixed(4);
@@ -42,6 +54,10 @@ function areaConverter(source,valNum) {
     inputFtb.value=(valNum*0.0000173611039736).toFixed(4);
     inputNCs.value=(valNum*0.00000000000066649338).toFixed(4);
     inputWak.value=(valNum*0.000000000041858518).toFixed(4);
+    inputRAH.value=(valNum*0.0000000000021565909).toFixed(4);
+    inputUSA.value=(valNum*0.0000000000000094238692).toFixed(4);
+    inputAtl.value=(valNum*0.00000000000000087045372).toFixed(4);
+    inputSAE.value=(valNum*0.00000000000000018213972).toFixed(4);
   }
   if (source=="inputSqi") {
     inputAcs.value=(valNum*640).toFixed(4);
@@ -52,6 +68,10 @@ function areaConverter(source,valNum) {
     inputFtb.value=(valNum*484.000009344).toFixed(4);
     inputNCs.value=(valNum*0.00001858079).toFixed(4);
     inputWak.value=(valNum*0.00116686114).toFixed(4);
+    inputRAH.value=(valNum*16591).toFixed(4);
+    inputUSA.value=(valNum*3796742).toFixed(4);
+    inputAtl.value=(valNum*41105000).toFixed(4);
+    inputSAE.value=(valNum*196936993.635).toFixed(4);
   }
     if (source=="inputSqk") {
     inputAcs.value=(valNum*247.105).toFixed(4);
@@ -62,6 +82,10 @@ function areaConverter(source,valNum) {
     inputFtb.value=(valNum*186.873448366).toFixed(4);
     inputNCs.value=(valNum*0.00000718447).toFixed(4);
     inputWak.value=(valNum*0.00045045045).toFixed(4);
+    inputRAH.value=(valNum*42970.493).toFixed(4);
+    inputUSA.value=(valNum*9833516.638).toFixed(4);
+    inputAtl.value=(valNum*106461461.28).toFixed(4);
+    inputSAE.value=(valNum*510064472).toFixed(4);
   }
       if (source=="inputSqm") {
     inputAcs.value=(valNum*0.000247105).toFixed(4);
@@ -72,6 +96,10 @@ function areaConverter(source,valNum) {
     inputFtb.value=(valNum*0.000186873448366).toFixed(4);
     inputNCs.value=(valNum*0.0000000000071741673).toFixed(4);
     inputWak.value=(valNum*0.00000000045045045).toFixed(4);
+    inputRAH.value=(valNum*0.000000000023271653).toFixed(4);
+    inputUSA.value=(valNum*0.00000000000010169245).toFixed(4);
+    inputAtl.value=(valNum*0.0000000000000093930179).toFixed(4);
+    inputSAE.value=(valNum*0.0000000000000019605365).toFixed(4);
   }
         if (source=="inputFtb") {
     inputAcs.value=(valNum*1.3223128549).toFixed(4);
@@ -82,6 +110,10 @@ function areaConverter(source,valNum) {
     inputSqm.value=(valNum*5351.215).toFixed(4);
     inputNCs.value=(valNum*0.000000038390079).toFixed(4);
     inputWak.value=(valNum*0.00000241087).toFixed(4);
+    inputRAH.value=(valNum*0.000000124532316).toFixed(4);
+    inputUSA.value=(valNum*0.00000000054418121).toFixed(4);
+    inputAtl.value=(valNum*0.000000000050264339).toFixed(4);
+    inputSAE.value=(valNum*0.000000000010491252).toFixed(4);
   }
           if (source=="inputNCs") {
     inputAcs.value=(valNum*34444160.0199).toFixed(4);
@@ -92,6 +124,10 @@ function areaConverter(source,valNum) {
     inputSqm.value=(valNum*139388999194).toFixed(4);
     inputFtb.value=(valNum*26048396.5141).toFixed(4);
     inputWak.value=(valNum*62.7992998833).toFixed(4);
+    inputRAH.value=(valNum*3.24386715689).toFixed(4);
+    inputUSA.value=(valNum*0.01417504797).toFixed(4);
+    inputAtl.value=(valNum*0.00130930543).toFixed(4);
+    inputSAE.value=(valNum*0.00027327721).toFixed(4);
   }
     if (source=="inputWak") {
     inputAcs.value=(valNum*548480.161473).toFixed(4);
@@ -102,6 +138,66 @@ function areaConverter(source,valNum) {
     inputSqm.value=(valNum*2220000002.22).toFixed(4);
     inputFtb.value=(valNum*414788.022581).toFixed(4);
     inputNCs.value=(valNum*0.0159237444).toFixed(4);
+    inputRAH.value=(valNum*0.05165451148).toFixed(4);
+    inputUSA.value=(valNum*0.00022571984).toFixed(4);
+    inputAtl.value=(valNum*0.00002084904).toFixed(4);
+    inputSAE.value=(valNum*0.00000435239).toFixed(4);
+  }
+    if (source=="inputRAH") {
+    inputAcs.value=(valNum*10618230.6116).toFixed(4);
+    inputHcs.value=(valNum*4297049.2733).toFixed(4);
+    inputSqf.value=(valNum*462530733486).toFixed(4);
+    inputSqi.value=(valNum*16591).toFixed(4);
+    inputSqk.value=(valNum*42970.492733).toFixed(4);
+    inputSqm.value=(valNum*42970492733).toFixed(4);
+    inputFtb.value=(valNum*8030044.15502).toFixed(4);
+    inputNCs.value=(valNum*0.30827402961).toFixed(4);
+    inputWak.value=(valNum*19.3593932322).toFixed(4);
+    inputUSA.value=(valNum*0.00436979915).toFixed(4);
+    inputAtl.value=(valNum*0.00040362486).toFixed(4);
+    inputSAE.value=(valNum*0.00008424521).toFixed(4);
+  }
+    if (source=="inputUSA") {
+    inputAcs.value=(valNum*2429912731.53).toFixed(4);
+    inputHcs.value=(valNum*983351663.674).toFixed(4);
+    inputSqf.value=(valNum*105847137732000).toFixed(4);
+    inputSqi.value=(valNum*3796742).toFixed(4);
+    inputSqk.value=(valNum*9833516.63674).toFixed(4);
+    inputSqm.value=(valNum*42970492733).toFixed(4);
+    inputFtb.value=(valNum*1837623163.48).toFixed(4);
+    inputNCs.value=(valNum*70.5464984485).toFixed(4);
+    inputWak.value=(valNum*4430.27071179).toFixed(4);
+    inputRAH.value=(valNum*228.843469351).toFixed(4);
+    inputAtl.value=(valNum*0.092366914).toFixed(4);
+    inputSAE.value=(valNum*0.019278968).toFixed(4);
+  }
+    if (source=="inputAtl") {
+    inputAcs.value=(valNum*26307176739.9).toFixed(4);
+    inputHcs.value=(valNum*10646146126.2).toFixed(4);
+    inputSqf.value=(valNum*1145942125240000).toFixed(4);
+    inputSqi.value=(valNum*41105000).toFixed(4);
+    inputSqk.value=(valNum*106461461.262).toFixed(4);
+    inputSqm.value=(valNum*106461461262000).toFixed(4);
+    inputFtb.value=(valNum*19894820384.1).toFixed(4);
+    inputNCs.value=(valNum*763.763726565).toFixed(4);
+    inputWak.value=(valNum*47963.8273046).toFixed(4);
+    inputRAH.value=(valNum*2477.54806823).toFixed(4);
+    inputUSA.value=(valNum*10.8263874659).toFixed(4);
+    inputSAE.value=(valNum*0.20872157757).toFixed(4);
+  }
+    if (source=="inputSAE") {
+    inputAcs.value=(valNum*126039564502).toFixed(4);
+    inputHcs.value=(valNum*51006447200.1).toFixed(4);
+    inputSqf.value=(valNum*5490290647250000).toFixed(4);
+    inputSqi.value=(valNum*196936993.661).toFixed(4);
+    inputSqk.value=(valNum*510064472).toFixed(4);
+    inputSqm.value=(valNum*510064472001000).toFixed(4);
+    inputFtb.value=(valNum*95317506772).toFixed(4);
+    inputNCs.value=(valNum*3659.24661664).toFixed(4);
+    inputWak.value=(valNum*229798.125625).toFixed(4);
+    inputRAH.value=(valNum*11870.1099187).toFixed(4);
+    inputUSA.value=(valNum*51.8699963445).toFixed(4);
+    inputAtl.value=(valNum*4.79107149157).toFixed(4);
   }
 }
 </script>
