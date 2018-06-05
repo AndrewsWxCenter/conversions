@@ -29,8 +29,6 @@ function presConverter(source,valNum) {
     inputmbs.value=(valNum*68.9476).toFixed(2);
     inputmHg.value=(valNum*51.714924102396).toFixed(2);
   }
-
-
 }
 </script>
 
