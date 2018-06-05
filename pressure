@@ -1,0 +1,38 @@
+<script>
+
+function presConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputAtm = document.getElementById("inputAtm");
+  var inputmbs = document.getElementById("inputmbs");
+  var inputmHg = document.getElementById("inputmHg");
+  var inputPSI = document.getElementById("inputPSI");
+
+
+  if (source=="inputAtm") {
+    inputmbs.value=(valNum*1013.25).toFixed(2);
+    inputmHg.value=(valNum*760).toFixed(2);
+    inputPSI.value=(valNum*14.6959).toFixed(2);
+  }
+  if (source=="inputmbs") {
+    inputAtm.value=(valNum*0.000986923).toFixed(2);
+    inputmHg.value=(valNum*0.75006156130264).toFixed(2);
+    inputPSI.value=(valNum*0.0145038).toFixed(2);
+  }
+  if (source=="inputmHg") {
+    inputAtm.value=(valNum*0.0013157895567935).toFixed(2);
+    inputmbs.value=(valNum*1.333223900000007).toFixed(2);
+    inputPSI.value=(valNum*0.0193368).toFixed(2);
+  }
+  if (source=="inputPSI") {
+    inputAtm.value=(valNum*0.068046).toFixed(2);
+    inputmbs.value=(valNum*68.9476).toFixed(2);
+    inputmHg.value=(valNum*51.714924102396).toFixed(2);
+  }
+
+
+}
+</script>
+
+
+
