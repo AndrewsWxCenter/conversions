@@ -1,0 +1,534 @@
+<script>
+
+function tempConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputFah = document.getElementById("inputFah");
+  var inputCel = document.getElementById("inputCel");
+  var inputKel = document.getElementById("inputKel");
+  var inputRan = document.getElementById("inputRan");
+
+  if (source=="inputFah") {
+    inputCel.value=(valNum*0.55555-17.77777).toFixed(2);
+    inputKel.value=(valNum*0.55555+255.37222).toFixed(2);
+    inputRan.value=(valNum*1+459.67).toFixed(2);
+  }
+  if (source=="inputCel") {
+    inputFah.value=(valNum*1.8+32).toFixed(2);
+    inputKel.value=(valNum*1+273.15).toFixed(2);
+    inputRan.value=(valNum*1+273.15*1.8).toFixed(2);
+  }
+  if (source=="inputKel") {
+    inputFah.value=(valNum*1.8-459.67).toFixed(2);
+    inputCel.value=(valNum*1-273.15).toFixed(2);
+    inputRan.value=(valNum*1.8).toFixed(2);
+  }
+  if (source=="inputRan") {
+    inputFah.value=(valNum*1-459.67).toFixed(2);
+    inputCel.value=(valNum*1-491.67*0.55555).toFixed(2);
+    inputKel.value=(valNum*0.55555).toFixed(2);
+  }
+}
+
+function speedConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputMph = document.getElementById("inputMph");
+  var inputKts = document.getElementById("inputKts");
+  var inputMps = document.getElementById("inputMps");
+  var inputKph = document.getElementById("inputKph");
+
+  if (source=="inputMph") {
+    inputKts.value=(valNum*0.86897).toFixed(2);
+    inputMps.value=(valNum*0.4470).toFixed(2);
+    inputKph.value=(valNum*1.60934).toFixed(2);
+  }
+  if (source=="inputKts") {
+    inputMph.value=(valNum*1.1508).toFixed(2);
+    inputMps.value=(valNum*0.5144).toFixed(2);
+    inputKph.value=(valNum*1.852).toFixed(2);
+  }
+  if (source=="inputMps") {
+    inputMph.value=(valNum*2.23694).toFixed(2);
+    inputKts.value=(valNum*1.944).toFixed(2);
+    inputKph.value=(valNum*3.6).toFixed(2);
+  }
+  if (source=="inputKph") {
+    inputMph.value=(valNum*0.621388).toFixed(2);
+    inputKts.value=(valNum*0.53996).toFixed(2);
+    inputMps.value=(valNum*0.277777).toFixed(2);
+  }
+}
+
+function areaConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputAcs = document.getElementById("inputAcs");
+  var inputHcs = document.getElementById("inputHcs");
+  var inputSqf = document.getElementById("inputSqf");
+  var inputSqi = document.getElementById("inputSqi");
+  var inputSqk = document.getElementById("inputSqk");
+  var inputSqm = document.getElementById("inputSqm");
+  var inputFtb = document.getElementById("inputFtb");
+  var inputNCs = document.getElementById("inputNCs");
+  var inputWak = document.getElementById("inputWak");
+
+  if (source=="inputAcs") {
+    inputHcs.value=(valNum*0.404686).toFixed(2);
+    inputSqf.value=(valNum*43560).toFixed(2);
+    inputSqi.value=(valNum*0.0015625).toFixed(2);
+    inputSqk.value=(valNum*0.00404686).toFixed(2);
+    inputSqm.value=(valNum*4046.86).toFixed(2);
+    inputFtb.value=(valNum*0.75625).toFixed(2);
+    inputNCs.value=(valNum*0.0000000290324978).toFixed(2);
+    inputWak.value=(valNum*0.00000182322).toFixed(2);
+  }
+  if (source=="inputHcs") {
+    inputAcs.value=(valNum*2.47105).toFixed(2);
+    inputSqf.value=(valNum*107639).toFixed(2);
+    inputSqi.value=(valNum*0.00386102).toFixed(2);
+    inputSqk.value=(valNum*0.01).toFixed(2);
+    inputSqm.value=(valNum*10000).toFixed(2);
+    inputFtb.value=(valNum*1.86873448366).toFixed(2);
+    inputNCs.value=(valNum*0.0000000717408491).toFixed(2);
+    inputWak.value=(valNum*0.00000450527).toFixed(2);
+  }
+  if (source=="inputSqf") {
+    inputAcs.value=(valNum*2.47105).toFixed(2);
+    inputHcs.value=(valNum*0.000022957).toFixed(2);
+    inputSqi.value=(valNum*0.00000003578).toFixed(2);
+    inputSqk.value=(valNum*0.000000092903).toFixed(2);
+    inputSqm.value=(valNum*0.092903).toFixed(2);
+    inputFtb.value=(valNum*0.0000173611039736).toFixed(2);
+    inputNCs.value=(valNum*0.00000000000066649338).toFixed(2);
+    inputWak.value=(valNum*0.000000000041858518).toFixed(2);
+  }
+  if (source=="inputSqi") {
+    inputAcs.value=(valNum*640).toFixed(2);
+    inputHcs.value=(valNum*258.999).toFixed(2);
+    inputSqf.value=(valNum*27780000).toFixed(2);
+    inputSqk.value=(valNum*2.58999).toFixed(2);
+    inputSqm.value=(valNum*2590000).toFixed(2);
+    inputFtb.value=(valNum*484.000009344).toFixed(2);
+    inputNCs.value=(valNum*0.00001858079).toFixed(2);
+    inputWak.value=(valNum*0.00116686114).toFixed(2);
+  }
+    if (source=="inputSqk") {
+    inputAcs.value=(valNum*247.105).toFixed(2);
+    inputHcs.value=(valNum*100).toFixed(2);
+    inputSqf.value=(valNum*10760000).toFixed(2);
+    inputSqi.value=(valNum*0.386102).toFixed(2);
+    inputSqm.value=(valNum*1000000).toFixed(2);
+    inputFtb.value=(valNum*186.873448366).toFixed(2);
+    inputNCs.value=(valNum*0.00000718447).toFixed(2);
+    inputWak.value=(valNum*0.00045045045).toFixed(2);
+  }
+      if (source=="inputSqm") {
+    inputAcs.value=(valNum*0.000247105).toFixed(2);
+    inputHcs.value=(valNum*0.0001).toFixed(2);
+    inputSqf.value=(valNum*10.7639).toFixed(2);
+    inputSqi.value=(valNum*0.0000003861).toFixed(2);
+    inputSqk.value=(valNum*0.000001).toFixed(2);
+    inputFtb.value=(valNum*0.000186873448366).toFixed(2);
+    inputNCs.value=(valNum*0.0000000000071741673).toFixed(2);
+    inputWak.value=(valNum*0.00000000045045045).toFixed(2);
+  }
+        if (source=="inputFtb") {
+    inputAcs.value=(valNum*1.3223128549).toFixed(2);
+    inputHcs.value=(valNum*0.5351215).toFixed(2);
+    inputSqf.value=(valNum*57600.0236806).toFixed(2);
+    inputSqi.value=(valNum*0.00206611566259).toFixed(2);
+    inputSqk.value=(valNum*0.005351215).toFixed(2);
+    inputSqm.value=(valNum*5351.215).toFixed(2);
+    inputNCs.value=(valNum*0.000000038390079).toFixed(2);
+    inputWak.value=(valNum*0.00000241087).toFixed(2);
+  }
+          if (source=="inputNCs") {
+    inputAcs.value=(valNum*34444160.0199).toFixed(2);
+    inputHcs.value=(valNum*13939059.9992).toFixed(2);
+    inputSqf.value=(valNum*1500390000000).toFixed(2);
+    inputSqi.value=(valNum*53819).toFixed(2);
+    inputSqk.value=(valNum*139389).toFixed(2);
+    inputSqm.value=(valNum*139388999194).toFixed(2);
+    inputFtb.value=(valNum*26048396.5141).toFixed(2);
+    inputWak.value=(valNum*62.7992998833).toFixed(2);
+  }
+    if (source=="inputWak") {
+    inputAcs.value=(valNum*548480.161473).toFixed(2);
+    inputHcs.value=(valNum*221962.27973).toFixed(2);
+    inputSqf.value=(valNum*23891799083.7).toFixed(2);
+    inputSqi.value=(valNum*857).toFixed(2);
+    inputSqk.value=(valNum*2220).toFixed(2);
+    inputSqm.value=(valNum*2220000002.22).toFixed(2);
+    inputFtb.value=(valNum*414788.022581).toFixed(2);
+    inputNCs.value=(valNum*0.0159237444).toFixed(2);
+  }
+}
+
+function lengthConverter(source,valNum) {
+
+  valNum = parseFloat(valNum);
+  var inputIn = document.getElementById("inputIn");
+  var inputFt = document.getElementById("inputFt");
+  var inputYd = document.getElementById("inputYd");
+  var inputFm = document.getElementById("inputFm");
+  var inputMe = document.getElementById("inputMe");
+  var inputCm = document.getElementById("inputCm");
+  var inputMm = document.getElementById("inputMm");
+  var inputMi = document.getElementById("inputMi");
+  var inputNm = document.getElementById("inputNm");
+  var inputKm = document.getElementById("inputKm");
+  var inputRD = document.getElementById("inputRD");
+  var inputER = document.getElementById("inputER");
+  var inputAU = document.getElementById("inputAU");
+
+  if (source=="inputIn") {
+    inputFt.value=(valNum*0.0833333333333).toFixed(4);
+    inputYd.value=(valNum*0.0277777777778).toFixed(4);
+    inputFm.value=(valNum*0.0138888888889).toFixed(4);
+    inputMe.value=(valNum*0.0254).toFixed(4);
+    inputCm.value=(valNum*2.54).toFixed(4);
+    inputMm.value=(valNum*25.4).toFixed(4);
+    inputMi.value=(valNum*0.0000157828282828).toFixed(4);
+    inputNm.value=(valNum*0.0000137149028078).toFixed(4);
+    inputKm.value=(valNum*0.0000254).toFixed(4);
+    inputRD.value=(valNum*0.000000644197073).toFixed(4);
+    inputER.value=(valNum*0.00000000398681526).toFixed(4);
+    inputAU.value=(valNum*0.000000000000169788512906).toFixed(4);
+  }
+  if (source=="inputFt") {
+    inputIn.value=(valNum*12).toFixed(4);
+    inputYd.value=(valNum*0.333333333333).toFixed(4);
+    inputFm.value=(valNum*0.166666666667).toFixed(4);
+    inputMe.value=(valNum*0.3048).toFixed(4);
+    inputCm.value=(valNum*30.48).toFixed(4);
+    inputMm.value=(valNum*304.8).toFixed(4);
+    inputMi.value=(valNum*0.000189393939394).toFixed(4);
+    inputNm.value=(valNum*0.000164578833693).toFixed(4);
+    inputKm.value=(valNum*0.0003048).toFixed(4);
+    inputRD.value=(valNum*0.00000773036).toFixed(4);
+    inputER.value=(valNum*0.0000000478417831).toFixed(4);
+    inputAU.value=(valNum*0.00000000000203746215487).toFixed(4);
+  }
+  if (source=="inputYd") {
+    inputIn.value=(valNum*36).toFixed(4);
+    inputFt.value=(valNum*3).toFixed(4);
+    inputFm.value=(valNum*0.5).toFixed(4);
+    inputMe.value=(valNum*0.9144).toFixed(4);
+    inputCm.value=(valNum*91.44).toFixed(4);
+    inputMm.value=(valNum*914.4).toFixed(4);
+    inputMi.value=(valNum*0.000568181818182).toFixed(4);
+    inputNm.value=(valNum*0.00049373650108).toFixed(4);
+    inputKm.value=(valNum*0.0009144).toFixed(4);
+    inputRD.value=(valNum*0.00002319109).toFixed(4);
+    inputER.value=(valNum*0.000000143525349).toFixed(4);
+    inputAU.value=(valNum*0.0000000000061123864646).toFixed(4);
+  }
+    if (source=="inputFm") {
+    inputIn.value=(valNum*72).toFixed(4);
+    inputFt.value=(valNum*6).toFixed(4);
+    inputYd.value=(valNum*2).toFixed(4);
+    inputMe.value=(valNum*1.8288).toFixed(4);
+    inputCm.value=(valNum*182.88).toFixed(4);
+    inputMm.value=(valNum*1828.8).toFixed(4);
+    inputMi.value=(valNum*0.00113636363636).toFixed(4);
+    inputNm.value=(valNum*0.00098747300216).toFixed(4);
+    inputKm.value=(valNum*0.0018288).toFixed(4);
+    inputRD.value=(valNum*0.00004638218).toFixed(4);
+    inputER.value=(valNum*0.000000287050698).toFixed(4);
+    inputAU.value=(valNum*0.0000000000122247729292).toFixed(4);
+  }
+      if (source=="inputMe") {
+    inputIn.value=(valNum*39.3700787402).toFixed(4);
+    inputFt.value=(valNum*3.28083989501).toFixed(4);
+    inputYd.value=(valNum*1.09361329834).toFixed(4);
+    inputFm.value=(valNum*0.546806649169).toFixed(4);
+    inputCm.value=(valNum*100).toFixed(4);
+    inputMm.value=(valNum*1000).toFixed(4);
+    inputMi.value=(valNum*0.000621371192237).toFixed(4);
+    inputNm.value=(valNum*0.000539956803456).toFixed(4);
+    inputKm.value=(valNum*0.001).toFixed(4);
+    inputRD.value=(valNum*0.00002536208).toFixed(4);
+    inputER.value=(valNum*0.000000156961231).toFixed(4);
+    inputAU.value=(valNum*0.00000000000668458712227).toFixed(4);
+  }
+        if (source=="inputCm") {
+    inputIn.value=(valNum*0.393700787402).toFixed(4);
+    inputFt.value=(valNum*0.0328083989501).toFixed(4);
+    inputYd.value=(valNum*0.0109361329834).toFixed(4);
+    inputFm.value=(valNum*0.00546806649169).toFixed(4);
+    inputMe.value=(valNum*0.01).toFixed(4);
+    inputMm.value=(valNum*10).toFixed(4);
+    inputMi.value=(valNum*0.00000621371192237).toFixed(4);
+    inputNm.value=(valNum*0.00000539956803456).toFixed(4);
+    inputKm.value=(valNum*0.00001).toFixed(4);
+    inputRD.value=(valNum*0.000000253620895).toFixed(4);
+    inputER.value=(valNum*0.00000000156961231).toFixed(4);
+    inputAU.value=(valNum*0.0000000000000668458712227).toFixed(4);
+  }
+          if (source=="inputMm") {
+    inputIn.value=(valNum*0.0393700787402).toFixed(4);
+    inputFt.value=(valNum*0.00328083989501).toFixed(4);
+    inputYd.value=(valNum*0.00109361329834).toFixed(4);
+    inputFm.value=(valNum*0.000546806649169).toFixed(4);
+    inputMe.value=(valNum*0.0001).toFixed(4);
+    inputCm.value=(valNum*0.1).toFixed(4);
+    inputMi.value=(valNum*0.000000621371192237).toFixed(4);
+    inputNm.value=(valNum*0.000000539956803456).toFixed(4);
+    inputKm.value=(valNum*0.000001).toFixed(4);
+    inputRD.value=(valNum*0.0000000253620895).toFixed(4);
+    inputER.value=(valNum*0.00000000015696123).toFixed(4);
+    inputAU.value=(valNum*0.00000000000000668458712227).toFixed(4);
+  }
+            if (source=="inputMi") {
+    inputIn.value=(valNum*63360).toFixed(4);
+    inputFt.value=(valNum*5280).toFixed(4);
+    inputYd.value=(valNum*1760).toFixed(4);
+    inputFm.value=(valNum*880).toFixed(4);
+    inputMe.value=(valNum*1609.344).toFixed(4);
+    inputCm.value=(valNum*160934.4).toFixed(4);
+    inputMm.value=(valNum*1609344).toFixed(4);
+    inputNm.value=(valNum*0.868976241901).toFixed(4);
+    inputKm.value=(valNum*1.609344).toFixed(4);
+    inputRD.value=(valNum*0.04081632653).toFixed(4);
+    inputER.value=(valNum*0.00025260461).toFixed(4);
+    inputAU.value=(valNum*0.0000000107578001777).toFixed(4);
+  }
+              if (source=="inputNm") {
+    inputIn.value=(valNum*72913.3858268).toFixed(4);
+    inputFt.value=(valNum*6076.11548556).toFixed(4);
+    inputYd.value=(valNum*2025.37182852).toFixed(4);
+    inputFm.value=(valNum*1012.68591426).toFixed(4);
+    inputMe.value=(valNum*1852).toFixed(4);
+    inputCm.value=(valNum*185200).toFixed(4);
+    inputMm.value=(valNum*1852000).toFixed(4);
+    inputMi.value=(valNum*1.15077944802).toFixed(4);
+    inputKm.value=(valNum*1.852).toFixed(4);
+    inputRD.value=(valNum*0.04697058971).toFixed(4);
+    inputER.value=(valNum*0.00029069219).toFixed(4);
+    inputAU.value=(valNum*0.0000000123798553504).toFixed(4);
+  }
+                if (source=="inputKm") {
+    inputIn.value=(valNum*39370.0787402).toFixed(4);
+    inputFt.value=(valNum*3280.83989501).toFixed(4);
+    inputYd.value=(valNum*1093.61329834).toFixed(4);
+    inputFm.value=(valNum*546.806649169).toFixed(4);
+    inputMe.value=(valNum*1000).toFixed(4);
+    inputCm.value=(valNum*100000).toFixed(4);
+    inputMm.value=(valNum*1000000).toFixed(4);
+    inputMi.value=(valNum*0.621371192237).toFixed(4);
+    inputNm.value=(valNum*0.539956803456).toFixed(4);
+    inputRD.value=(valNum*0.02536208947).toFixed(4);
+    inputER.value=(valNum*0.00015696123).toFixed(4);
+    inputAU.value=(valNum*0.00000000668458712227).toFixed(4);
+  }
+                  if (source=="inputRD") {
+    inputIn.value=(valNum*1552320).toFixed(4);
+    inputFt.value=(valNum*129360).toFixed(4);
+    inputYd.value=(valNum*43120).toFixed(4);
+    inputFm.value=(valNum*21560).toFixed(4);
+    inputMe.value=(valNum*39428.928).toFixed(4);
+    inputCm.value=(valNum*3942892.8).toFixed(4);
+    inputMm.value=(valNum*39428928).toFixed(4);
+    inputMi.value=(valNum*24.5).toFixed(4);
+    inputNm.value=(valNum*21.2899179266).toFixed(4);
+    inputKm.value=(valNum*39.428928).toFixed(4);
+    inputER.value=(valNum*0.00618881305).toFixed(4);
+    inputAU.value=(valNum*0.000000263566104354).toFixed(4);
+  }
+                    if (source=="inputER") {
+    inputIn.value=(valNum*250826771.654).toFixed(4);
+    inputFt.value=(valNum*20902230.9711).toFixed(4);
+    inputYd.value=(valNum*6967410.32371).toFixed(4);
+    inputFm.value=(valNum*3483705.16185).toFixed(4);
+    inputMe.value=(valNum*6371000).toFixed(4);
+    inputCm.value=(valNum*637100000).toFixed(4);
+    inputMm.value=(valNum*6371000000).toFixed(4);
+    inputMi.value=(valNum*3958.75586574).toFixed(4);
+    inputNm.value=(valNum*3440.06479482).toFixed(4);
+    inputKm.value=(valNum*6371).toFixed(4);
+    inputRD.value=(valNum*161.581872071).toFixed(4);
+    inputAU.value=(valNum*0.000042587504556).toFixed(4);
+  }
+                      if (source=="inputAU") {
+    inputIn.value=(valNum*5889679948820).toFixed(4);
+    inputFt.value=(valNum*490806662402).toFixed(4);
+    inputYd.value=(valNum*163602220801).toFixed(4);
+    inputFm.value=(valNum*81801110400.3).toFixed(4);
+    inputMe.value=(valNum*149597870700).toFixed(4);
+    inputCm.value=(valNum*14959787070000).toFixed(4);
+    inputMm.value=(valNum*149597870700000).toFixed(4);
+    inputMi.value=(valNum*92955807.273).toFixed(4);
+    inputNm.value=(valNum*80776388.067).toFixed(4);
+    inputKm.value=(valNum*149597870.7).toFixed(4);
+    inputRD.value=(valNum*3794114.58257).toFixed(4);
+    inputER.value=(valNum*23481.0658766).toFixed(4);
+  }
+}
+</script>
+
+
+
+
+
+
+
+<label>Fahrenheit</label>
+    <input id="inputFah" class="w3-input w3-border" type="number" placeholder="Fahrenheit" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>Celsius</label>
+    <input id="inputCel" class="w3-input w3-border" type="number" placeholder="Celsius" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>Kelvin</label>
+    <input id="inputKel" class="w3-input w3-border" type="number" placeholder="Kelvin" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>Rankine</label>
+    <input id="inputRan" class="w3-input w3-border" type="number" placeholder="Rankine" oninput="tempConverter(this.id,this.value)" onchange="tempConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+   
+</div>
+
+<br>
+<hr>
+<br>
+
+<label>MPH</label>
+    <input id="inputMph" class="w3-input w3-border" type="number" placeholder="Miles per hour" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>Knots</label>
+    <input id="inputKts" class="w3-input w3-border" type="number" placeholder="Knots" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>M/S</label>
+    <input id="inputMps" class="w3-input w3-border" type="number" placeholder="Meters per second" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>KPH</label>
+    <input id="inputKph" class="w3-input w3-border" type="number" placeholder="Kilometers per hour" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+   
+</div>
+
+<br>
+<hr>
+<br>
+
+
+<label>Acres</label>
+    <input id="inputAcs" class="w3-input w3-border" type="number" placeholder="Acs" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+  
+    <label>Hectacres</label>
+    <input id="inputHcs" class="w3-input w3-border" type="number" placeholder="Hct" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Square feet</label>
+    <input id="inputSqf" class="w3-input w3-border" type="number" placeholder="Sqft" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+  </div>
+  
+  <div class="w3-half w3-margin-top">
+    <label>Square miles</label>
+    <input id="inputSqi" class="w3-input w3-border" type="number" placeholder="Sqmi" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>Square kilometers</label>
+    <input id="inputSqk" class="w3-input w3-border" type="number" placeholder="Sqkm" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+  </div>
+
+
+  <div class="w3-half w3-margin-top">
+    <label>Square meters</label>
+    <input id="inputSqm" class="w3-input w3-border" type="number" placeholder="Sqm" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>American Football Fields</label>
+    <input id="inputFtb" class="w3-input w3-border" type="number" placeholder="FBF" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>North Carolinas</label>
+    <input id="inputNCs" class="w3-input w3-border" type="number" placeholder="NCs" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Wake Counties (NC)</label>
+    <input id="inputWak" class="w3-input w3-border" type="number" placeholder="Wake" oninput="areaConverter(this.id,this.value)" onchange="areaConverter(this.id,this.value)">
+  </div>
+  
+<br>
+<hr>
+<br>
+
+<label>Inches</label>
+    <input id="inputIn" class="w3-input w3-border" type="number" placeholder="In" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+  <div class="w3-half w3-margin-top">
+    <label>Feet</label>
+    <input id="inputFt" class="w3-input w3-border" type="number" placeholder="Ft" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+  <div class="w3-half w3-margin-top">
+    <label>Yards</label>
+    <input id="inputYd" class="w3-input w3-border" type="number" placeholder="Yd" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+
+  <div class="w3-half w3-margin-top">
+    <label>Fathoms</label>
+    <input id="inputFm" class="w3-input w3-border" type="number" placeholder="Fath" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Meters</label>
+    <input id="inputMe" class="w3-input w3-border" type="number" placeholder="M" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Centimeters</label>
+    <input id="inputCm" class="w3-input w3-border" type="number" placeholder="Cm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Millimeters</label>
+    <input id="inputMm" class="w3-input w3-border" type="number" placeholder="Mm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Miles</label>
+    <input id="inputMi" class="w3-input w3-border" type="number" placeholder="Mi" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Nautical Miles</label>
+    <input id="inputNm" class="w3-input w3-border" type="number" placeholder="Nm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Kilometers</label>
+    <input id="inputKm" class="w3-input w3-border" type="number" placeholder="Km" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Trips from Raleigh to Durham</label>
+    <input id="inputRD" class="w3-input w3-border" type="number" placeholder="Rah-Duh" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Earth Radii</label>
+    <input id="inputER" class="w3-input w3-border" type="number" placeholder="ER" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  
+    <div class="w3-half w3-margin-top">
+    <label>Astronomical Units</label>
+    <input id="inputAU" class="w3-input w3-border" type="number" placeholder="AU" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+<<hr>
