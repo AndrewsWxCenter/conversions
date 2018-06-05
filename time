@@ -199,13 +199,6 @@ function timeConverter(source,valNum) {
     inputMar.value=(valNum*122201519.695).toFixed(2);
     inputJup.value=(valNum*10303669.4515).toFixed(2);
   }
-  
-
-
-
-
-
-
 }
 </script>
 
